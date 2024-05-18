@@ -10,12 +10,12 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
-@Data //gets e sets
-@NoArgsConstructor //construtor vazio
-@AllArgsConstructor //construtor fixo
-@Entity // isso é uma anotação. Esta dizendo que essa classe abaixo é um entidade.
-public class Aluno implements Serializable {
-    @Id // To dizendo que ele é uma chave primária.
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+public class Professor implements Serializable {
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
